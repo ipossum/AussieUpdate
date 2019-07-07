@@ -1,0 +1,53 @@
+<div class="">
+  <app-buttons (langChange)="changeLanguage($event)"></app-buttons>
+  <h3 *ngIf="language !== 'de'">CONTACT</h3>
+  <h3 *ngIf="language === 'de'">KONTAKT</h3>
+  <ul>
+    <li>
+      <div class="article">
+        <div class="card">
+          <iframe *ngIf="language !== 'de'" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921104.4150687684!2d140.82605325909307!3d-36.13472635424009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad46edf7a06fe8d%3A0x6b6004602359b514!2s3+Foam+Ct%2C+Torquay+VIC+3228!5e0!3m2!1sde!2sau!4v1560481958786!5m2!1sen!2sau" width="448" height="448" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe *ngIf="language === 'de'" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921104.4150687684!2d140.82605325909307!3d-36.13472635424009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad46edf7a06fe8d%3A0x6b6004602359b514!2s3+Foam+Ct%2C+Torquay+VIC+3228!5e0!3m2!1sde!2sau!4v1560481958786!5m2!1sde!2sau" width="448" height="448" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <div class="caption">
+            <p>
+              <span class='glyphicon glyphicon-envelope'></span>&nbsp;
+              Alex &amp; Regula Huber<br />
+              3 Foam Court<br />
+              Torquay VIC 3228<br />
+              Australia<br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="article">
+        <div class="card">
+          <img src="../assets/r.jpg">
+          <div class="caption">
+            <p>
+              <span class='glyphicon glyphicon-earphone'></span>&nbsp; 0061 (0)412 417 418 &nbsp;<img src="../assets/au.png" width="25" /><br />
+              <span class='glyphicon glyphicon-earphone'></span>&nbsp; 0041 (0)79 724 89 19 &nbsp;<img src="../assets/ch.png" width="25" /><br />
+              <span class='glyphicon glyphicon-envelope'></span>&nbsp; regulahuber@gmx.net<br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="article">
+        <div class="card">
+          <img src="../assets/a.jpg" alt="">
+          <div class="caption">
+            <p>
+              <span class='glyphicon glyphicon-earphone'></span>&nbsp; 0061 (0)049 820 68 62 &nbsp;<img src="../assets/au.png" width="25" /><br />
+              <span class='glyphicon glyphicon-earphone'></span>&nbsp; 0041 (0)79 524 03 01 &nbsp;<img src="../assets/ch.png" width="25" /><br />
+              <span class='glyphicon glyphicon-envelope'></span>&nbsp; alex_huber@gmx.ch<br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+{{stateData}}

@@ -1,0 +1,19 @@
+<div class="">
+  <ul>
+    <li *ngFor="let article of articles">
+      <div class="article">
+        <h3 *ngIf="article.title != ''" class="top">{{article.title}}</h3>
+        <p>{{article.paragraph}}</p>
+
+        <div *ngIf="article.picUrl != ''" class="card">
+          <img src="{{article.picUrl}}" alt="{{article.summary}}">
+          <div class="caption">
+            <p class="summary">{{article.summary}}</p>
+          </div>
+        </div>
+
+      </div>
+    </li>
+  </ul>
+  <app-buttons (langChange)="changeLanguage($event)"></app-buttons>
+</div>
