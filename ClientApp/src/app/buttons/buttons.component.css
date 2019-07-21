@@ -1,11 +1,11 @@
 @media (max-width: 767px) {
   .nav2 {    
-    top: 50px;    
+    top: 52px;    
   }
 }
 @media (min-width: 768px) {
   .nav2 {    
-    top: 0;    
+    top: 2px;    
   }
 }
 
@@ -28,9 +28,25 @@ li {
   font-weight: 600;
   text-decoration: none;  
 }
+#back {
+  color: #4189C7;
+}
 
-li:hover {
+#forward {
+  color: #4189C7;
+}
+
+#home {
+  color: #4189C7;
+}
+#back:hover {
   color: #333;    
+}
+#forward:hover {
+  color: #333;
+}
+#home:hover {
+  color: #333;
 }
 /*li.pic:hover {
   padding-top:5px;  
@@ -41,9 +57,9 @@ li:hover {
 .flags{
   padding-left:7px;
 }
-.navi{
+/*.navi{
   padding-left:7px;
 }
 .navi1{
   padding-left:0;
-}
+}*/

@@ -22,21 +22,17 @@ export class AprilComponent implements OnInit {
   {
     //this.safeSrc = this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/eQ3-qkh1xYI?autoplay=0&controls=2&autohide=1&modestbranding=1&fs=0&iv_load_policy=3&rel=0&vq=hd720");
     //this.safeSrc[1] = this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/VAE-u2lwSH0?autoplay=0&controls=2&autohide=1&modestbranding=1&fs=0&iv_load_policy=3&rel=0&vq=hd720");
-  }
+  }  
   
   ngOnInit() {
-    this.language = this.stateService.getLanguage();    //this.getLanguage(); 
+    this.language = this.stateService.getLanguage();    
     this.month = this.getMonthNr();
     this.file = this.getFile();
     this.getArticles(this.file);
 
     //this.articleParent = new Article();
     //this.articleParent.picUrl = 'https://www.youtube.com/embed/eQ3-qkh1xYI?autoplay=0&controls=2&autohide=1&modestbranding=1&fs=0&iv_load_policy=3&rel=0&vq=hd720';
-  }  
-
-  //getLanguage(): string {
-  //  return navigator.language.split('-')[0].toLowerCase() === 'de' ? 'de' : 'en';
-  //}
+  }    
 
   getMonthNr(): string {
     var url = this.router.url;
@@ -89,7 +85,7 @@ export class AprilComponent implements OnInit {
   }
 
   getFile(): string {
-    return 'articles' + this.month + this.stateService.getLanguage();  //this.language;
+    return 'articles' + this.month + this.stateService.getLanguage(); 
   }
 
   getArticles(file: string): void {    

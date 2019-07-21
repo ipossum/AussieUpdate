@@ -10,7 +10,7 @@
             <a class='navbar-brand' [routerLink]='["/"]'>Aussie Update</a>
         </div>
         <div class='clearfix'></div>
-        <div class='navbar-collapse collapse' [ngClass]='{ "in": isExpanded }'>          
+        <div class='navbar-collapse collapse' [ngClass]='{ "in": isExpanded }'>
           <ul class='nav navbar-nav'>
             <li [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
               <a [routerLink]='["/"]' (click)='collapse()'>
@@ -48,42 +48,43 @@
               </a>
             </li>
             <!--<li [routerLinkActive]='["link-active"]'>
-    <a [routerLink]='["/7"]' (click)='collapse()'>
-      <span class='glyphicon glyphicon-pencil'></span> July
-    </a>
-  </li>
-  <li [routerLinkActive]='["link-active"]'>
-    <a [routerLink]='["/8"]' (click)='collapse()'>
-      <span class='glyphicon glyphicon-pencil'></span> August
-    </a>
-  </li>
-  <li [routerLinkActive]='["link-active"]'>
-    <a [routerLink]='["/9"]' (click)='collapse()'>
-      <span class='glyphicon glyphicon-pencil'></span> September
-    </a>
-  </li>
-  <li [routerLinkActive]='["link-active"]'>
-    <a [routerLink]='["/10"]' (click)='collapse()'>
-      <span class='glyphicon glyphicon-pencil'></span> October
-    </a>
-  </li>
-  <li [routerLinkActive]='["link-active"]'>
-    <a [routerLink]='["/11"]' (click)='collapse()'>
-      <span class='glyphicon glyphicon-pencil'></span> Novovember
-    </a>
-  </li>
-  <li [routerLinkActive]='["link-active"]'>
-    <a [routerLink]='["/12"]' (click)='collapse()'>
-      <span class='glyphicon glyphicon-pencil'></span> December
-    </a>
-  </li>-->
+              <a [routerLink]='["/7"]' (click)='collapse()'>
+                <span class='glyphicon glyphicon-pencil'></span> July
+              </a>
+            </li>
+            <li [routerLinkActive]='["link-active"]'>
+              <a [routerLink]='["/8"]' (click)='collapse()'>
+                <span class='glyphicon glyphicon-pencil'></span> August
+              </a>
+            </li>
+            <li [routerLinkActive]='["link-active"]'>
+              <a [routerLink]='["/9"]' (click)='collapse()'>
+                <span class='glyphicon glyphicon-pencil'></span> September
+              </a>
+            </li>
+            <li [routerLinkActive]='["link-active"]'>
+              <a [routerLink]='["/10"]' (click)='collapse()'>
+                <span class='glyphicon glyphicon-pencil'></span> October
+              </a>
+            </li>
+            <li [routerLinkActive]='["link-active"]'>
+              <a [routerLink]='["/11"]' (click)='collapse()'>
+                <span class='glyphicon glyphicon-pencil'></span> Novovember
+              </a>
+            </li>
+            <li [routerLinkActive]='["link-active"]'>
+              <a [routerLink]='["/12"]' (click)='collapse()'>
+                <span class='glyphicon glyphicon-pencil'></span> December
+              </a>
+            </li>-->
             <li [routerLinkActive]='["link-active"]'>
               <a [routerLink]='["/Contact"]' (click)='collapse()'>
-                <span class='glyphicon glyphicon-envelope'></span><span *ngIf="language != 'de'">Contact</span><span *ngIf="language == 'de'">Kontakt</span>
+                <span class='glyphicon glyphicon-envelope'></span><span *ngIf="lang != 'de'">Contact</span><span *ngIf="lang == 'de'">Kontakt</span>
               </a>
             </li>
           </ul>
         </div>
     </div>
 </div>
+
 

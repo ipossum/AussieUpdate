@@ -10,7 +10,7 @@ import { StateService } from '../state.service';
 export class ButtonsComponent implements OnInit {
 
   @Output()
-  langChange = new EventEmitter<string>();  
+  langChange = new EventEmitter<string>();
 
   constructor(private router : Router, private stateService:StateService) {}
 
@@ -25,10 +25,14 @@ export class ButtonsComponent implements OnInit {
     else if (button === 'ch') {
       this.stateService.setLanguage('de');      
       this.langChangeComplete();
+      
+      this.stateService.changeLang('de');
     }
     else if (button === 'au') {
       this.stateService.setLanguage('en');       
       this.langChangeComplete();
+      
+      this.stateService.changeLang('en');
     }
   } 
    
@@ -56,10 +60,8 @@ export class ButtonsComponent implements OnInit {
     var month;
     if (url === '/') month = 0;
     if (url === '/Home') month = 0;
-
     if (url === '/') month = '0';
     if (url === '/Home') month = '0';
-
     if (url === '/1') month = '1';
     if (url === '/2') month = '2';
     if (url === '/3') month = '3';
@@ -102,6 +104,7 @@ export class ButtonsComponent implements OnInit {
     if (url === '/November') month = 11;
     if (url === '/December') month = 12;    
     if (url === '/Contact') month = 13;
+
     return month;
   }
 
@@ -122,20 +125,6 @@ export class ButtonsComponent implements OnInit {
     if (nbr === 12) url = '/12';
     if (nbr === 13) url = '/Contact';
 
-    //if (nbr === 0) url = '/';
-    //if (nbr === 1) url = '/Januar';
-    //if (nbr === 2) url = '/Februar';
-    //if (nbr === 3) url = '/Maerz';
-    //if (nbr === 4) url = '/April';
-    //if (nbr === 5) url = '/Mai';
-    //if (nbr === 6) url = '/Juni';
-    //if (nbr === 7) url = '/Juli';
-    //if (nbr === 8) url = '/August';
-    //if (nbr === 9) url = '/September';
-    //if (nbr === 10) url = '/Oktober';
-    //if (nbr === 11) url = '/November';
-    //if (nbr === 12) url = '/Dezember';
-    //if (nbr === 13) url = '/Kontakt';
     return url;
   }
 

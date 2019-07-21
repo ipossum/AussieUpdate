@@ -1,4 +1,4 @@
-  <div class="nav2" style="position: absolute; left: 50%;">
+  <!--<div class="nav2" style="position: absolute; left: 50%;">
     <div style="position: relative; left: -50%;">
       <ul class="btns">
         <li id="back" (click)="open($event, 'back')"><span class='glyphicon glyphicon-backward navi navi1'></span></li>
@@ -8,5 +8,13 @@
         <li class="pic" (click)="open($event, 'au')"><img class="glyphicon flags" width="30" src="../assets/au.png" /></li>
       </ul>
     </div>
+  </div>-->
+
+  <div>    
+        <div id="back" class="nav2" style="position:fixed; left:calc(50% - 85px);" (click)="open($event, 'back')"><span class='glyphicon glyphicon-backward navi navi1' style="font-size:20px;"></span></div>
+        <div id="home" class="nav2" style="position:fixed; left:calc(50% - 55px);" (click)="open($event, 'home')"><span class='glyphicon glyphicon-home navi' style="font-size:20px;"></span></div>
+        <div id="forward" class="nav2" style="position:fixed; left:calc(50% - 25px);" (click)="open($event, 'forward')"><span class='glyphicon glyphicon-forward navi' style="font-size:20px;"></span></div>
+        <div class="pic nav2" style="position:fixed; left:calc(50% + 5px);" (click)="open($event, 'ch')"><img class="glyphicon flags" width="40" src="../assets/ch.png" /></div>
+        <div class="pic nav2" style="position:fixed; left:calc(50% + 45px);" (click)="open($event, 'au')"><img class="glyphicon flags" width="40" src="../assets/au.png" /></div>     
   </div>
 

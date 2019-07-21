@@ -20,21 +20,21 @@ export const ARTICLES6EN: Article[] = [
     picUrl: '../assets/hitop.jpg',
     title: '',
     summary: 'Travelling in a Hitop Camper',
-    paragraph: 'We picked up a Hitop Camper from the Britz depot in Alice Springs. The vehicle came with a mobile heater which made life at night a lot easier. Of course, we could have stayed in a tent. With temperatures dropping to freezing point during the night this didn’t seem a particular good option.'
+    paragraph: 'We picked up a Hitop Camper from the Britz depot in Alice Springs. The vehicle came with a mobile heater which made life at night a lot easier. Of course, we could have stayed in a tent. With temperatures dropping to freezing point during the night this didn’t seem a particularly good option.'
   },
   {
     id: 2020,
     picUrl: '../assets/ormiston.jpg',
     title: '',
     summary: 'Ormiston Gorge at the West MacDonnell Ranges',
-    paragraph: 'We spent the first two nights at the West MacDonnell Ranges. Located to the west of Alice Springs these ranges are at least 1000 million years old. The gorges are amazing. Enthusiastic bushwalker are given the opportunity to walk the Larapinta Trail (223 kilometers) that follows the ranges. The group of hikers who we met at the camp at Glen Helen, however, seemed to have lost all enthusiasm. They appeared to be absolutely exhausted.'
+    paragraph: 'We spent the first two nights at the West MacDonnell Ranges. Located to the west of Alice Springs these ranges are at least 1000 million years old. The gorges are amazing. Enthusiastic bushwalkers are given the opportunity to walk the Larapinta Trail (223 kilometers) that follows the ranges. The group of hikers who we met at the camp at Glen Helen, however, seemed to have lost all enthusiasm. They appeared to be absolutely exhausted.'
   },
   {
     id: 2020,
     picUrl: '../assets/kingscanyon.JPG',
     title: '',
     summary: 'Bushwalking at Kings Canyon',
-    paragraph: 'The drive to Kings Canyon was not without incident. Our navigation app indicated three hours from Alice Springs, where we had to refuel and buy food, to Kings Canyon. The app didn’t mention the 200 kilometers of dirt road not do be managed by our camper. Driving an alternative route meant an additional two hours, which was too long to make it to Kings Canyon before dark. Driving at night in Australia is a very bad idea due to all the wildlife. We therefore spent the night somewhere in the bush before continuing our journey the next morning.'
+    paragraph: 'The drive to Kings Canyon was not without incident. Our navigation app indicated three hours from Alice Springs, where we had to refuel and buy food, to Kings Canyon. The app didn’t mention the 200 kilometers of dirt road not to be managed by our camper. Driving an alternative route meant an additional two hours, which was too long to make it to Kings Canyon before dark. Driving at night in Australia is a very bad idea due to all the wildlife. We therefore spent the night somewhere in the bush before continuing our journey the next morning.'
   },
   {
     id: 2020,
@@ -90,7 +90,7 @@ export const ARTICLES6EN: Article[] = [
     picUrl: '../assets/JukeBox2.jpg',
     title: '',
     summary: 'Getting Dressed ',
-    paragraph: 'Whereas we had to wear our uniform during the first section of the concert, the outfit for the second part could be selected individually and fitting to the music being performed. Some of the players turned up dressed rather lightly and provocatively for the second part of the concert.'
+    paragraph: 'Whereas we had to wear our uniform during the first section of the concert, the outfit for the second part could be selected individually and fitting to the music being performed. Some of the players turned up dressed rather provocatively for the second part of the concert.'
   },
   {
     id: 2020,
