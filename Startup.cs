@@ -51,6 +51,9 @@ namespace AussieUpdate
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
 
+            //Add our new middleware to the pipeline
+            //app.UseMiddleware<RequestLoggingMiddleware>();
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

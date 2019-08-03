@@ -43,16 +43,12 @@ export class ButtonsComponent implements OnInit {
     else if (button === 'forward') month++
     else month = 0;
 
-    //TBD with each new post    0 1 2 3 4 5 6 13
+    //TBD with each new post    0 1 2 3 4 5 6 7 13
     if (month === -1) month = 13;
-    if (month === 12) month = 6;
-    if (month === 7) month = 13;
+    if (month === 12) month = 7;
+    if (month === 8) month = 13;
     if (month === 14) month = 0;
-
-    //TBD with each new post    1 2 3 4 5
-    //if (month === 0) month = 5;
-    //if (month === 6) month = 1;
-
+    
     return this.getUrl(month)
   }
   

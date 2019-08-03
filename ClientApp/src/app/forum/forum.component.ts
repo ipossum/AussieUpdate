@@ -14,17 +14,18 @@ export class ForumComponent implements OnInit {
 
   public news: any = {};
 
-  constructor(private forumService: ForumService) { }
+  //constructor(private forumService: ForumService) { }
 
-  ngOnInit() {
-    this.getArticles();    
-  }
+  ngOnInit() { };
+  //ngOnInit() {
+  //  this.getArticles();    
+  //}
 
-  getArticles(): void {
-    this.news = [];
-    this.forumService.getArticles().subscribe((data: {}) => {
-      console.log(data);
-      this.news = data;
-    });
-  };  
+  //getArticles(): void {
+  //  this.news = [];
+  //  this.forumService.getArticles().subscribe((data: {}) => {
+  //    console.log(data);
+  //    this.news = data;
+  //  });
+  //};  
 };
